@@ -1,4 +1,4 @@
-#RETOS 2022
+# RETOS 2022
 
 Diversos retos de programación con el objetivo de mejorar.
 
