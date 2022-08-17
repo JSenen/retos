@@ -11,5 +11,6 @@ Enlace al github https://github.com/mouredev/Weekly-Challenge-2022-Kotlin
 * **#1** - 13/08/2022 - 'ANAGRAMA'
 * **#2** - 13/08/2022 - 'FIBONNANCI'
 * **#3** - 13/08/2022 - 'NUMEROS PRIMOS'
+* **#4** - 17/08/2022 - 'AREA DE UN POLIGONO'
 
 
