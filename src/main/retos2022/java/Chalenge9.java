@@ -16,10 +16,10 @@ import java.util.Scanner;
 public class Chalenge9 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        System.out.print("*** MENU ***");
-        System.out.print("1) Alphabet to Morse");
-        System.out.print("2) Morse to Alphabet");
-        System.out.print("OPTION: ");
+        System.out.println("*** MENU ***");
+        System.out.println("1) Alphabet to Morse");
+        System.out.println("2) Morse to Alphabet");
+        System.out.println("OPTION: ");
         String option = console.nextLine();
         String phrase;
         switch (option){
@@ -27,25 +27,26 @@ public class Chalenge9 {
                 System.out.print("Intro phrase: ");
                 phrase = console.nextLine();
                 alphaToMorse(phrase.toUpperCase());
+                System.out.println(phrase);
                 break;
             case("2"):
                 System.out.print("Intro morse: ");
                 phrase = console.nextLine();
-                morseToAlpha(phrase.toUpperCase());
+                morseToAlpha(phrase);
                 break;
         }
     }
-    public String alphaToMorse(String phrase){
+    public static ArrayList<String> alphaToMorse(String phrase){
         ArrayList<String> alphaphrase = new ArrayList<>();
         for (int i = 0; i <= phrase.length(); i++){
             String word = String.valueOf(phrase.charAt(i));
             if(word.equalsIgnoreCase("A")){
-
+                alphaphrase.add(i,word);
             }
         }
-        return phraseChange;
+        return alphaphrase;
     }
-    public String morseToAlpha(String phrase){
-        return phraseChange;
+    public static String morseToAlpha(String phrase){
+        return phrase;
     }
 }
