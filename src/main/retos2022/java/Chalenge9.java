@@ -130,21 +130,113 @@ public class Chalenge9 {
         }
     }
     public static void morseToAlpha(String phrase){
+        // Dividiomos la frase morse en palabras y la asignamos a un ArrayList
         int longPhrase = (phrase.length())-1;
         ArrayList<String> phrase2 = new ArrayList<>();
         String word = phrase.toUpperCase();
+        System.out.println("FRASE: "+word);
         String complet = "";
         for (int i=0; i <= longPhrase; i++){
+
             String letter = String.valueOf(word.charAt(i));
-            if (letter.equalsIgnoreCase(".")){
+            if (!letter.equalsIgnoreCase(" ")){
                 complet = complet+letter;
+            }else if (letter.equalsIgnoreCase("  ")){
+                phrase2.add("||");
             }else{
                 phrase2.add(complet);
+                phrase2.add(" ");
+                complet = "";
             }
-            complet = "";
+        }
+        // Recorremos el Array y traducimos a alfabetico
+        System.out.println(phrase2);
+        for (String letters:phrase2) {
+            if (letters.equalsIgnoreCase(".-")){
+                System.out.print("A");
+            } else if (letters.equalsIgnoreCase("-...")) {
+                System.out.print("B");
+            } else if (letters.equalsIgnoreCase("-.-.")){
+                System.out.print("C");
+            } else if (letters.equalsIgnoreCase("-..")){
+                System.out.print("D");
+            }else if (letters.equalsIgnoreCase(".")) {
+                System.out.print("E");
+            }else if (letters.equalsIgnoreCase("..-.")) {
+                System.out.print("F");
+            }else if (letters.equalsIgnoreCase("--.")) {
+                System.out.print("G");
+            }else if (letters.equalsIgnoreCase("....")) {
+                System.out.print("H");
+            }else if (letters.equalsIgnoreCase("..")) {
+                System.out.print("I");
+            }else if (letters.equalsIgnoreCase(".---")) {
+                System.out.print("J");
+            }else if (letters.equalsIgnoreCase("-.-")) {
+                System.out.print("K");
+            }else if (letters.equalsIgnoreCase(".-..")) {
+                System.out.print("L");
+            }else if (letters.equalsIgnoreCase("--")) {
+                System.out.print("M");
+            }else if (letters.equalsIgnoreCase("-.")) {
+                System.out.print("N");
+            }else if (letters.equalsIgnoreCase("--.--")) {
+                System.out.print("Ñ");
+            }else if (letters.equalsIgnoreCase("---")) {
+                System.out.print("O");
+            }else if (letters.equalsIgnoreCase(".--.")) {
+                System.out.print("P");
+            }else if (letters.equalsIgnoreCase("--.-")) {
+                System.out.print("Q");
+            }else if (letters.equalsIgnoreCase(".-.")) {
+                System.out.print("R");
+            }else if (letters.equalsIgnoreCase("...")) {
+                System.out.print("S");
+            }else if (letters.equalsIgnoreCase("-")) {
+                System.out.print("T");
+            }else if (letters.equalsIgnoreCase("..-")) {
+                System.out.print("U");
+            }else if (letters.equalsIgnoreCase("...-")) {
+                System.out.print("V");
+            }else if (letters.equalsIgnoreCase(".--")) {
+                System.out.print("W");
+            }else if (letters.equalsIgnoreCase("-..-")) {
+                System.out.print("X");
+            }else if (letters.equalsIgnoreCase("-.--")) {
+                System.out.print("Y");
+            }else if (letters.equalsIgnoreCase("--..")) {
+                System.out.print("Z");
+            }else if (letters.equalsIgnoreCase("-----")) {
+                System.out.print("0");
+            }else if (letters.equalsIgnoreCase(".----")) {
+                System.out.print("1");
+            }else if (letters.equalsIgnoreCase("..---")) {
+                System.out.print("2");
+            }else if (letters.equalsIgnoreCase("...--")) {
+                System.out.print("3");
+            }else if (letters.equalsIgnoreCase("....-")) {
+                System.out.print("4");
+            }else if (letters.equalsIgnoreCase(".....")) {
+                System.out.print("5");
+            }else if (letters.equalsIgnoreCase("-....")) {
+                System.out.print("6");
+            }else if (letters.equalsIgnoreCase("--...")) {
+                System.out.print("7");
+            }else if (letters.equalsIgnoreCase("---..")) {
+                System.out.print("8");
+            }else if (letters.equalsIgnoreCase("----.")) {
+                System.out.print("9");
+            }else if (letters.equalsIgnoreCase(".-.-.-")) {
+                System.out.print(".");
+            }else if (letters.equalsIgnoreCase("--..--")) {
+                System.out.print(",");
+            }else if (letters.equalsIgnoreCase("..--..")) {
+                System.out.print("?");
+            }else if (letters.equalsIgnoreCase("  ")) {
+                System.out.print("||");
+            }
 
         }
-        System.out.println(phrase2);
     }
 
 
