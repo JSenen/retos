@@ -14,7 +14,7 @@ Enlace al github original de retos de programaci-on: https://github.com/mouredev
 * **#4**  - DIFICIL - ['AREA DE UN POLIGONO'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge4.java)
 * **#5**  - DIFICIL - ['ASPECT RATIO DE UNA IMAGEN URL']()
 * **#6**  - FACIL   - ['INVERSION TEXTO'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge6.java)
-* **#7**  - MEDIA   - ['CONTANDO PALABRAS']()
+* **#7**  - MEDIA   - ['CONTANDO PALABRAS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge7.java)
 * **#8**  - FACIL   - ['DECIMAL A BIANRIO']()
 * **#9**  - MEDIA   - ['MORSE'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge9.java)
 * **#10** - MEDIA   - ['EXPERIOSNES EQUILIBRADAS']()
