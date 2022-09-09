@@ -8,6 +8,7 @@
 
  */
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Chalenge8 {
@@ -19,18 +20,26 @@ public class Chalenge8 {
 
         int decimal = Integer.parseInt(number);
 
-        String binary="";
-        String result="";
+        ArrayList<String> binary = new ArrayList<String>();
+        int count = 0;
 
-        while (decimal / 2 >= 1) {
-            result=result+(String.valueOf(decimal%2));
-            decimal = decimal/2;
+        while (decimal / 2 > 0) {
+            System.out.println(decimal+" %2 ="+decimal%2);
+            binary.add(count, String.valueOf((decimal%2)));
+            decimal = decimal / 2;
+            count++;
         }
-        result=result+(String.valueOf(decimal/2));
-        for (int i=result.length()-1; i>0; i--){
-            binary=binary+(result.charAt(i));
+        System.out.println(decimal+"\r");
+        binary.add(count, String.valueOf(decimal));
+
+        ArrayList<String> binary2 =new ArrayList<String>();
+        int contador = 0;
+
+        for (int i = binary.size()-1; i>=0; i--){
+            binary2.add(contador, binary.get(i));
+            contador++;
         }
-        System.out.println("NUMBER "+number+" TO BINARY IT IS "+binary);
+        System.out.println("NUMBER "+number+" TO BINARY IT IS "+binary2);
 
 
     }
