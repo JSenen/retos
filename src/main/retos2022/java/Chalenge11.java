@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /*
  * Reto #11
  * ELIMINANDO CARACTERES
@@ -11,4 +14,30 @@
 
  */
 public class Chalenge11 {
+    public static void main(String[] args) {
+
+        Scanner console = new Scanner(System.in);
+        System.out.println("INTRO A STRING 1: ");
+        String str1 = console.nextLine();
+        System.out.println("INTRO A STRING 2: ");
+        String str2 = console.nextLine();
+
+        ArrayList<String> out1 = new ArrayList<>();
+        ArrayList<String> out2 = new ArrayList<>();
+        int count = 0;
+
+        for (int i = 0; i < str1.length(); i++) {
+            String ch1 = String.valueOf(str1.charAt(i));
+            for (int u = 0; u < str2.length(); u++) {
+                String ch2 = String.valueOf(str2.charAt(u));
+                if (ch2 != ch1) {
+                    out1.add(count,ch2);
+                    count++;
+                    continue;
+                }
+
+            }
+        }
+        System.out.println("CHARACTERS OF STRING 2 THAT ARE NOT IN STRING 1 "+out1);
+    }
 }
