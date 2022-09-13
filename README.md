@@ -18,4 +18,4 @@ Enlace al github original de retos de programaci-on: https://github.com/mouredev
 * **#8**  - FACIL   - ['DECIMAL A BIANRIO'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge8.java)
 * **#9**  - MEDIA   - ['MORSE'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge9.java)
 * **#10** - MEDIA   - ['EXPRSIONES EQUILIBRADAS']()
-* **#11** - FACIL   - ['ELIMINANDO CARACTERES']()
+* **#11** - FACIL   - ['ELIMINANDO CARACTERES'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge11.java)
