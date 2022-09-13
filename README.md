@@ -17,5 +17,5 @@ Enlace al github original de retos de programaci-on: https://github.com/mouredev
 * **#7**  - MEDIA   - ['CONTANDO PALABRAS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge7.java)
 * **#8**  - FACIL   - ['DECIMAL A BIANRIO'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge8.java)
 * **#9**  - MEDIA   - ['MORSE'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge9.java)
-* **#10** - MEDIA   - ['EXPRSIONES EQUILIBRADAS']()
+* **#10** - MEDIA   - ['EXPRSIONES EQUILIBRADAS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge10.java)
 * **#11** - FACIL   - ['ELIMINANDO CARACTERES'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge11.java)
