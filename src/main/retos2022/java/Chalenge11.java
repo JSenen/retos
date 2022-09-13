@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 /*
@@ -24,20 +25,26 @@ public class Chalenge11 {
 
         ArrayList<String> out1 = new ArrayList<>();
         ArrayList<String> out2 = new ArrayList<>();
+        ArrayList<String> out3 = new ArrayList<>();
         int count = 0;
 
         for (int i = 0; i < str1.length(); i++) {
             String ch1 = String.valueOf(str1.charAt(i));
-            for (int u = 0; u < str2.length(); u++) {
-                String ch2 = String.valueOf(str2.charAt(u));
-                if (ch2 != ch1) {
-                    out1.add(count,ch2);
-                    count++;
-                    continue;
-                }
-
-            }
+            out1.add(i,ch1);
+            out3.add(i,ch1);
         }
-        System.out.println("CHARACTERS OF STRING 2 THAT ARE NOT IN STRING 1 "+out1);
+        for (int u = 0; u < str2.length(); u++){
+            String ch2 = String.valueOf(str2.charAt(u));
+            out2.add(u,ch2);
+        }
+
+
+        out1.removeAll(out2);
+        System.out.println("CHARACTERS OF STRING 1 THAT ARE NOT IN STRING 2 "+out1);
+
+        out2.removeAll(out3);
+        System.out.println("CHARACTERS OF STRING 2 THAT ARE NOT IN STRING 1 "+out2);
+
     }
+
 }
