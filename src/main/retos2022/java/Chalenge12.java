@@ -1,3 +1,7 @@
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.Scanner;
+
 /*
  * Reto #12
  * ¿ES UN PALÍNDROMO?
@@ -18,4 +22,45 @@
  *
  */
 public class Chalenge12 {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        boolean contin = false;
+
+        do {
+            System.out.println("ENTER A TEXT: ");
+            String str1 = console.nextLine();
+            System.out.println("ENTER ANOTHER TEXT: ");
+            String str2 = console.nextLine();
+
+            if (str1.length() == str2.length() ){
+                contin = true;
+            }else{
+                contin = false;
+                System.out.println("TEXT 1 AND TEXT 2 MUST HAVE THE SAME LENGHT");
+            }
+
+        }while (contin = false);
+
+        System.out.println("ENTER A TEXT: ");
+        String str1 = console.nextLine();
+        System.out.println("ENTER ANOTHER TEXT: ");
+        String str2 = console.nextLine();
+
+        char ch;
+        String reverse = "";
+
+
+        for (int i=0; i < str2.length(); i++){
+            ch = str2.charAt(i);
+            reverse = ch + reverse;
+        }
+        System.out.println("REVERSE: "+reverse);
+
+        if (str1.equals(str2)){
+            System.out.println("TEXT 1 AND TEXT 2 ARE PALINDROME");
+        }else{
+            System.out.println("TEXT 1 AND TEXT 2 ARE NOT PALINDROME");
+        }
+
+    }
 }
