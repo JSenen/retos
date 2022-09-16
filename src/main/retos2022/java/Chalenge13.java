@@ -15,5 +15,20 @@
  *
  */
 
+import java.util.Scanner;
+
 public class Chalenge13 {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.println("Intro a number to calculate factorial: ");
+        int number = console.nextInt();
+        int factorial = 1;
+
+        for (int i=number; i >= 1; i--){
+            factorial = factorial * i;
+        }
+
+        System.out.println("Factorial "+number+"! = "+factorial);
+    }
 }
