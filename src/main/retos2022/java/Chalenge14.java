@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * Reto #14
  * ¿ES UN NÚMERO DE ARMSTRONG?
@@ -16,4 +18,18 @@
  *
  */
 public class Chalenge14 {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.println("***** AMSTRONG NUMBER *****");
+        System.out.print("Intro a number: ");
+
+        int number = console.nextInt();
+        int exp = (int)(Math.log10(number)+1);
+        System.out.println("EXP = "+exp);
+
+
+
+
+    }
 }
