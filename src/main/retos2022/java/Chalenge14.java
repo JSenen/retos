@@ -24,12 +24,25 @@ public class Chalenge14 {
         System.out.println("***** AMSTRONG NUMBER *****");
         System.out.print("Intro a number: ");
 
-        int number = console.nextInt();
-        int exp = (int)(Math.log10(number)+1);
-        System.out.println("EXP = "+exp);
+        double number = console.nextInt();
+        String num = String.valueOf(number); // Convertimos el numero a cadena String
 
+        int exp = (int)(Math.log10(number)+1); // Hallamos el exponente
+        double total = 0;
 
+        for (int i=0; i < exp; i++){ // Recorre los numeros elevando cada numero al exponente y sumandolo
+            String numString = String.valueOf(num.charAt(i)); // Convierte el char del numero (indice) a String
+            double numDouble = Double.parseDouble(numString); // Convierte el String a Double
+            total = total + Potencia(numDouble, exp); // Llamada a la función calculo exponente
+        }
+        if (total == number){ // Compara el numero con la suma de sus expoenntes para comprobar si es AMSTRONG
+            System.out.println("IT IS AN AMSTRONG NUMBER");
+        }else{
+            System.out.println("IT IS NOT AN AMSTRONG NUMBER");
+        }
 
-
+    }
+    public static double Potencia (double numero, double exponente){
+        return  Math.pow(numero,exponente);
     }
 }
