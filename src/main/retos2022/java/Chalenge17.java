@@ -26,5 +26,47 @@
  *
  */
 
+import java.lang.reflect.Array;
+import java.util.Scanner;
+
 public class Chalenge17 {
+
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        boolean salir = false;
+        do {
+            System.out.println("Introduce pista (- SUELO , | VALLA) separado por comas");
+            String pistaGame = console.nextLine();
+            String[] pista= pistaGame.split(",");
+
+            System.out.println("Introduce movimiento atleta (run,jump) separado por comas");
+            String atletaGame = console.nextLine();
+            String[] atleta = atletaGame.split(",");
+
+            if (pista.length == atleta.length){
+                System.out.println(Compare(pista,atleta));
+                salir = true;
+            }
+        }while (salir = false);
+
+    }
+    public static String Compare(String[] pista, String[] atleta){
+        System.out.println(pista);
+        System.out.println(atleta);
+        int contador = 0;
+        String resultado;
+        for (int i = 0; i < pista.length; i++){
+            if (((pista[i] == "-") && (atleta[i] == "run")) || ((pista[i]=="|") && (atleta[i]=="jump"))){
+                contador++;
+            }
+        }
+        if(contador == pista.length){
+            return resultado = "SUPERA PISTA";
+        }else {
+            return resultado = "NO SUPERA PISTA";
+        }
+
+
+    }
 }
