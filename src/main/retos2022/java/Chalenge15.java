@@ -1,7 +1,7 @@
-import org.w3c.dom.ls.LSOutput;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 /*
@@ -28,23 +28,24 @@ public class Chalenge15 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
-        /* Recibe las fechas en formato String */
+        /** Recibe las fechas en formato String */
 
         System.out.print("Insert a date (dd/MM/yyyy): ");
         String fecha1 = console.nextLine();
         System.out.print("Insert a second date (dd/MM/yyyy): ");
         String fecha2 = console.nextLine();
 
-        // TODO /* Convertir fechas de String a valor*/
+        /** Convertir fechas de String a Date*/
+
+        LocalDate fechaInicio = LocalDate.parse(fecha1, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        LocalDate fechaFin = LocalDate.parse(fecha2,DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+
+        /** Hayar diferencia dias entre fechas */
+
+        int dias = (int) ChronoUnit.DAYS.between(fechaInicio,fechaFin);
+        System.out.println("Número de días de diferencia entre "+fechaInicio+" y "+fechaFin+" = "+dias+ "días");
 
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/YYYY");
-
-        LocalDate fechaInicio = LocalDate.parse(fecha1,formatter);
-        LocalDate fechaFin = LocalDate.parse(fecha2,formatter);
-
-        System.out.println(fechaInicio);
-        System.out.println(fechaFin);
 
 
 
