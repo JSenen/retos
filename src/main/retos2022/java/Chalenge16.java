@@ -17,5 +17,23 @@
  *
  */
 
+import java.util.Scanner;
+
 public class Chalenge16 {
-}
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.println("Introduce una cadena de texto: ");
+        String cadena = console.nextLine();
+
+        System.out.println(FirstUpper(cadena));
+
+        }
+        public static String FirstUpper (String str){
+        return str.substring(0,1).toUpperCase()+str.substring(1);
+        }
+
+
+
+    }
+
