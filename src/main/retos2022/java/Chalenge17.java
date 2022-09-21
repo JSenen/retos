@@ -48,18 +48,20 @@ public class Chalenge17 {
                 System.out.println(Compare(pista,atleta));
                 salir = true;
             }
-        }while (salir = false);
+        }while (salir == false);
 
     }
     public static String Compare(String[] pista, String[] atleta){
-        System.out.println(pista);
-        System.out.println(atleta);
         int contador = 0;
         String resultado;
         for (int i = 0; i < pista.length; i++){
-            if (((pista[i] == "-") && (atleta[i] == "run")) || ((pista[i]=="|") && (atleta[i]=="jump"))){
+            if ((pista[i].equals("-") && atleta[i].equals("run")) || (pista[i].equals("|") && atleta[i].equals("jump"))){
                 contador++;
+
+            }else{
+                contador=contador;
             }
+
         }
         if(contador == pista.length){
             return resultado = "SUPERA PISTA";

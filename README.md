@@ -22,5 +22,6 @@ Enlace al github original de retos de programaci-on: https://github.com/mouredev
 * **#12** - MEDIA   - ['PALINDROMOS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge12.java)
 * **#13** - MEDIA   - ['FACTORIAL'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge13.java)
 * **#14** - FACIL   - ['NUMERO AMSTRONG'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge14.java)
-* **#15** - DIFICIL   - ['¿CUANTOS DIAS?'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge14.java)
-* **#16** - FACIL   - ['EN MAYUSCULAS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge14.java)
+* **#15** - DIFICIL   - ['¿CUANTOS DIAS?'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge15.java)
+* **#16** - FACIL   - ['EN MAYUSCULAS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge16.java)
+* **#17** - MEDIA   - ['CARRERA DE OBSTÁCULOS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge17.java)
