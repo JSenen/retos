@@ -1,3 +1,9 @@
+
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /*
  * Reto #18
  * TRES EN RAYA
@@ -20,4 +26,24 @@
  *
  */
 public class Chalenge18 {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        String[][] matriz = new String[3][3];
+
+        /** Pedir al usuario introduzca valores de la matriz */
+        System.out.println("Introduce los simbolos correspondientes a la matriz de 3x3");
+        for (int i=0; i < 3; i++){
+            for (int u = 0; u < 3; u++){
+                System.out.println("Simbolo fila "+(i+1)+" columna "+(u+1));
+                //TODO añadir simbolos a la matriz
+            }
+        }
+
+        /** Dibujar matriz */
+
+
+        /** Analizar resultados*/
+
+    }
+
 }
