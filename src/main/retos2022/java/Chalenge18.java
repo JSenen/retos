@@ -63,8 +63,20 @@ public class Chalenge18 {
             x=1;
 
         } else if ((matriz[0][0].equals("O") && matriz[0][1].equals("O") && matriz[0][2].equals("O")) || (matriz[1][0].equals("O") && matriz[1][1].equals("O") && matriz[1][2].equals("O")) || (matriz[2][0].equals("O") && matriz[2][1].equals("O") && matriz[2][2].equals("O"))) {
+            y=1;
+        }else if ((matriz[0][0].equals("O") && matriz[1][0].equals("O") && matriz[2][0].equals("O")) || (matriz[0][1].equals("O") && matriz[1][1].equals("O") && matriz[2][1].equals("O")) || (matriz[0][2].equals("O") && matriz[1][2].equals("O") && matriz[2][2].equals("O"))) {
+            y = 1;
+        }else if ((matriz[0][0].equals("O") && matriz[1][1].equals("O") && matriz[2][2].equals("O")) || (matriz[0][2].equals("O") && matriz[1][1].equals("O") && matriz[2][0].equals("O"))) {
+            y = 1;
+        }
+        if (x==1 && y<1){
+            resultado = "\"X\" GANAN";
+        } else if (y==1 && x<1) {
+            resultado = "\"O\" GANAN";
 
-        }/*TODO CONTINUAR ANALISIS*/
+        }else{
+            resultado="EMPATE";
+        }
 
         return resultado;
     }
