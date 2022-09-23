@@ -26,3 +26,4 @@ Enlace al github original de retos de programaci-on: https://github.com/mouredev
 * **#16** - FACIL   - ['EN MAYUSCULAS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge16.java)
 * **#17** - MEDIA   - ['CARRERA DE OBSTÁCULOS'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge17.java)
 * **#18** - DIFICIL   - ['TRES EN RAYA'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge18.java)
+* **#19** - FACIL   - ['CONVERSOR TIEMPO'](https://github.com/JSenen/retos/blob/master/src/main/retos2022/java/Chalenge19.java)
