@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * Reto #20
  * PARANDO EL TIEMPO
@@ -9,12 +11,28 @@
  * - Recibirá por parámetros los 2 números a sumar y los segundos que debe tardar en finalizar su ejecución.
  * - Si el lenguaje lo soporta, deberá retornar el resultado de forma asíncrona, es decir, sin detener la ejecución del programa principal. Se podría ejecutar varias veces al mismo tiempo.
  *
- * Información adicional:
- * - Usa el canal de nuestro discord (https://mouredev.com/discord) "🔁reto-semanal" para preguntas, dudas o prestar ayuda a la comunidad.
- * - Puedes hacer un Fork del repo y una Pull Request al repo original para que veamos tu solución aportada.
- * - Revisaré el ejercicio en directo desde Twitch el lunes siguiente al de su publicación.
- * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
- *
  */
 public class Chalenge20 {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.println("Intro a number: ");
+        int num1 = console.nextInt();
+        System.out.println("Intro a second number: ");
+        int num2 = console.nextInt();
+        System.out.println("Intro time to wait in seconds: ");
+        int seconds = console.nextInt();
+
+        /** Paramos el proceso el tiempo indicado */
+
+        try {
+            Thread.sleep(seconds*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(Suma(num1,num2));
+    }
+    public static int Suma(int num1, int num2){
+        return num1+num2;
+    }
 }
