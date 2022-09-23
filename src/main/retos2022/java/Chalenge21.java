@@ -32,7 +32,7 @@ public class Chalenge21 {
         String path = "/Users/lonestar/Documents/JAVA/retos2022/src/main/retos2022/java/Chalenge21.txt";
         BufferedReader reader = null;
 
-        /*TODO Leer sobre BufferedReader
+        /*TODO Leer sobre BufferedReader*/
         try {
             reader = new BufferedReader(new FileReader(path));
             String line, mathExpression = "";
