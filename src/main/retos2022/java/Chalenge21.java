@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /*
  * Reto #21
  * CALCULADORA .TXT
@@ -21,4 +26,25 @@
  *
  */
 public class Chalenge21 {
+    public static void main(String[] args) {
+
+        /** Leer fichero txt en su ruta*/
+        String path = "/Users/lonestar/Documents/JAVA/retos2022/src/main/retos2022/java/Chalenge21.txt";
+        BufferedReader reader = null;
+
+        /*TODO Leer sobre BufferedReader
+        try {
+            reader = new BufferedReader(new FileReader(path));
+            String line, mathExpression = "";
+            while ((line = reader.readLine()) != null) {
+                mathExpression += line;
+
+                reader.close();
+                System.out.println(mathExpression);
+
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
