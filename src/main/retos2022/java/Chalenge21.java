@@ -1,7 +1,5 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.Scanner;
 
 /*
  * Reto #21
@@ -27,24 +25,35 @@ import java.io.IOException;
  */
 public class Chalenge21 {
     public static void main(String[] args) {
+        // Fichero del que queremos leer
+        File fichero = new File("/Users/juansenengarciasaez/Desktop/retos2022/src/main/retos2022/java/Chalenge21.txt"); //Al estar dentro del proyecto la ruta es directa
+        Scanner s = null;
 
-        /** Leer fichero txt en su ruta*/
-        String path = "/Users/lonestar/Documents/JAVA/retos2022/src/main/retos2022/java/Chalenge21.txt";
-        BufferedReader reader = null;
+        int operacion = 0; // guardara el resultado de las operaciones
 
-        /*TODO Leer sobre BufferedReader*/
+
         try {
-            reader = new BufferedReader(new FileReader(path));
-            String line, mathExpression = "";
-            while ((line = reader.readLine()) != null) {
-                mathExpression += line;
+            // Leemos el contenido del fichero
+            System.out.println("... Leemos el contenido del fichero ...");
+            s = new Scanner(fichero);
 
-                reader.close();
-                System.out.println(mathExpression);
-
+            // Leemos linea a linea el fichero
+            while (s.hasNextLine()) {
+                String linea = s.nextLine();    // Guardamos la linea en un String
+                System.out.println(linea);      // Imprimimos la linea
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+
+        } catch (Exception ex) {
+            System.out.println("Mensaje: " + ex.getMessage());
+        } finally {
+            // Cerramos el fichero tanto si la lectura ha sido correcta o no
+            try {
+                if (s != null)
+                    s.close();
+            } catch (Exception ex2) {
+                System.out.println("Mensaje 2: " + ex2.getMessage());
+            }
+
         }
     }
 }
